@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "icon_24pt@2x.png",
+      "filename" : "loop dark-watchOS-Default-24x24@2x.png",
       "idiom" : "watch",
       "role" : "notificationCenter",
       "scale" : "2x",
@@ -9,7 +9,7 @@
       "subtype" : "38mm"
     },
     {
-      "filename" : "icon_27.5pt@2x.png",
+      "filename" : "loop dark-watchOS-Default-27.5x27.5@2x.png",
       "idiom" : "watch",
       "role" : "notificationCenter",
       "scale" : "2x",
@@ -17,20 +17,21 @@
       "subtype" : "42mm"
     },
     {
-      "filename" : "icon_29pt@2x.png",
+      "filename" : "loop dark-watchOS-Default-29x29@2x.png",
       "idiom" : "watch",
       "role" : "companionSettings",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "filename" : "icon_29pt@3x.png",
+      "filename" : "loop dark-watchOS-Default-43.5x43.5@2x.png",
       "idiom" : "watch",
       "role" : "companionSettings",
       "scale" : "3x",
       "size" : "29x29"
     },
     {
+      "filename" : "loop dark-watchOS-Default-33x33@2x.png",
       "idiom" : "watch",
       "role" : "notificationCenter",
       "scale" : "2x",
@@ -38,7 +39,7 @@
       "subtype" : "45mm"
     },
     {
-      "filename" : "icon_40pt@2x.png",
+      "filename" : "loop dark-watchOS-Default-40x40@2x.png",
       "idiom" : "watch",
       "role" : "appLauncher",
       "scale" : "2x",
@@ -46,7 +47,7 @@
       "subtype" : "38mm"
     },
     {
-      "filename" : "icon_44pt@2x.png",
+      "filename" : "loop dark-watchOS-Default-44x44@2x.png",
       "idiom" : "watch",
       "role" : "appLauncher",
       "scale" : "2x",
@@ -54,6 +55,7 @@
       "subtype" : "40mm"
     },
     {
+      "filename" : "loop dark-watchOS-Default-46x46@2x.png",
       "idiom" : "watch",
       "role" : "appLauncher",
       "scale" : "2x",
@@ -61,7 +63,7 @@
       "subtype" : "41mm"
     },
     {
-      "filename" : "icon_50pt@2x.png",
+      "filename" : "loop dark-watchOS-Default-50x50@2x.png",
       "idiom" : "watch",
       "role" : "appLauncher",
       "scale" : "2x",
@@ -69,6 +71,7 @@
       "subtype" : "44mm"
     },
     {
+      "filename" : "loop dark-watchOS-Default-51x51@2x.png",
       "idiom" : "watch",
       "role" : "appLauncher",
       "scale" : "2x",
@@ -76,6 +79,7 @@
       "subtype" : "45mm"
     },
     {
+      "filename" : "loop dark-watchOS-Default-54x54@2x.png",
       "idiom" : "watch",
       "role" : "appLauncher",
       "scale" : "2x",
@@ -83,7 +87,7 @@
       "subtype" : "49mm"
     },
     {
-      "filename" : "icon_86pt@2x.png",
+      "filename" : "loop dark-watchOS-Default-86x86@2x.png",
       "idiom" : "watch",
       "role" : "quickLook",
       "scale" : "2x",
@@ -91,7 +95,7 @@
       "subtype" : "38mm"
     },
     {
-      "filename" : "icon_98pt@2x.png",
+      "filename" : "loop dark-watchOS-Default-98x98@2x.png",
       "idiom" : "watch",
       "role" : "quickLook",
       "scale" : "2x",
@@ -99,7 +103,7 @@
       "subtype" : "42mm"
     },
     {
-      "filename" : "icon_108pt@2x.png",
+      "filename" : "loop dark-watchOS-Default-108x108@2x.png",
       "idiom" : "watch",
       "role" : "quickLook",
       "scale" : "2x",
@@ -107,6 +111,7 @@
       "subtype" : "44mm"
     },
     {
+      "filename" : "loop dark-watchOS-Default-117x117@2x.png",
       "idiom" : "watch",
       "role" : "quickLook",
       "scale" : "2x",
@@ -114,6 +119,7 @@
       "subtype" : "45mm"
     },
     {
+      "filename" : "loop dark-watchOS-Default-129x129@2x.png",
       "idiom" : "watch",
       "role" : "quickLook",
       "scale" : "2x",
@@ -121,7 +127,7 @@
       "subtype" : "49mm"
     },
     {
-      "filename" : "Icon.png",
+      "filename" : "loop dark-watchOS-Default-1088x1088@1x.png",
       "idiom" : "watch-marketing",
       "scale" : "1x",
       "size" : "1024x1024"
