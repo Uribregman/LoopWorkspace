@@ -95,15 +95,16 @@ struct FollowerStatusView: View {
                     // the number itself stops looking authoritative, because the
                     // number is the thing people read.
                     .foregroundStyle(stale ? .secondary : .primary)
-                if let trend = feed.status?.glucoseTrend {
-                    Image(systemName: Self.trendSymbol(trend))
+                if let symbol = Self.trendSymbol(status: feed.status,
+                                                 rate: feed.latestGlucose?.trendRate) {
+                    Image(systemName: symbol)
                         .font(.system(size: 30, weight: .semibold))
                         .foregroundStyle(stale ? .secondary : .primary)
                 }
                 Spacer()
                 VStack(alignment: .trailing, spacing: 2) {
                     Text("mg/dL", comment: "Unit").font(.subheadline).foregroundStyle(.secondary)
-                    if let rate = feed.status?.glucoseTrendRate {
+                    if let rate = feed.status?.glucoseTrendRate ?? feed.latestGlucose?.trendRate {
                         Text(String(format: "%@%.1f/min", rate >= 0 ? "+" : "", rate))
                             .font(.caption).monospacedDigit().foregroundStyle(.secondary)
                     }
@@ -391,6 +392,38 @@ struct FollowerStatusView: View {
         let hours = Int(seconds / 3600)
         if hours < 24 { return String(format: NSLocalizedString("in %d h", comment: "Remaining"), hours) }
         return String(format: NSLocalizedString("in %1$d d %2$d h", comment: "Remaining"), hours / 24, hours % 24)
+    }
+
+    /// The trend arrow.
+    ///
+    /// 🐛 THE STATUS RECORD NEVER CARRIES A TREND STRING, and relying on it meant
+    /// this arrow could never appear on a real feed at all. `StoredDosingDecision`
+    /// has no arrow, so `HistoryLogger.appendStatusRecord` writes
+    /// `glucoseTrend: nil` — always — and says so in a comment: the follower is
+    /// expected to fall back to the GLUCOSE records, which carry `trendRate` in
+    /// mg/dL per minute. That fallback is this function.
+    ///
+    /// The string case is kept for the day the publisher does send one, and
+    /// because the fixture exercises it.
+    static func trendSymbol(status: FeedStatus?, rate: Double?) -> String? {
+        if let trend = status?.glucoseTrend, !trend.isEmpty {
+            return trendSymbol(trend)
+        }
+        guard let rate = status?.glucoseTrendRate ?? rate else { return nil }
+        return trendSymbol(rate: rate)
+    }
+
+    /// Conventional CGM arrow thresholds, in mg/dL per minute.
+    static func trendSymbol(rate: Double) -> String {
+        switch rate {
+        case 3...:        return "arrow.up"
+        case 2..<3:       return "arrow.up.right"
+        case 1..<2:       return "arrow.up.right"
+        case -1..<1:      return "arrow.right"
+        case -2 ..< -1:   return "arrow.down.right"
+        case -3 ..< -2:   return "arrow.down.right"
+        default:          return "arrow.down"
+        }
     }
 
     static func trendSymbol(_ trend: String) -> String {
