@@ -15,6 +15,7 @@ import SwiftUI
 
 struct FollowerSettingsView: View {
     let settings: FeedSettings?
+    @AppStorage("com.uriBregman.loopkit.basal.LoopFollow.sample") private var showingSample = false
 
     var body: some View {
         List {
@@ -51,6 +52,11 @@ struct FollowerSettingsView: View {
                         settings.maximumBasalRate.map { "\(format($0)) U/hr" })
                 }
                 Section {
+                    if showingSample {
+                        Text("Sample data — not a real person.", comment: "Fixture note")
+                            .font(.caption)
+                            .foregroundStyle(.orange)
+                    }
                     Text("These are read from their phone. Nothing here can be edited from this app, and nothing this app does reaches their Loop.",
                          comment: "Read-only note")
                         .font(.caption)

@@ -28,7 +28,11 @@ struct FollowerStatusView: View {
     @EnvironmentObject private var store: FollowerFeedStore
     /// Shows the checked-in sample instead of the live feed. Only reachable
     /// before pairing, and labelled on screen the whole time it is on.
-    @State private var showingSample = false
+    ///
+    /// ⚠️ APP-WIDE, not per-screen. Sample mode that applied to one tab and not
+    /// the others would put invented numbers next to real ones with no way to
+    /// tell which was which — the single worst thing a fixture can do.
+    @AppStorage("com.uriBregman.loopkit.basal.LoopFollow.sample") private var showingSample = false
 
     private var feed: FollowerFeed? { showingSample ? FollowerFixture.feed : store.feed }
 
@@ -64,11 +68,6 @@ struct FollowerStatusView: View {
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button { store.refresh() } label: { Image(systemName: "arrow.clockwise") }
-                }
-                ToolbarItem(placement: .topBarLeading) {
-                    NavigationLink { FollowerSettingsView(settings: feed?.settings) } label: {
-                        Image(systemName: "list.bullet.rectangle")
-                    }
                 }
             }
             .refreshable { await store.fetch() }

@@ -22,7 +22,10 @@
 import Foundation
 
 /// One record from the rolling window.
-struct FeedRecord: Decodable, Identifiable {
+///
+/// `Codable` rather than `Decodable` because `FollowerHistoryStore` writes these
+/// straight back out to keep more than the feed's 24-hour window.
+struct FeedRecord: Codable, Identifiable {
     let t: String
     let at: String
 

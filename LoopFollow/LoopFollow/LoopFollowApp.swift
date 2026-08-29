@@ -26,10 +26,13 @@ struct LoopFollowApp: App {
     @StateObject private var store = FollowerFeedStore.shared
     @Environment(\.scenePhase) private var scenePhase
 
+    @StateObject private var history = FollowerHistoryStore.shared
+
     var body: some Scene {
         WindowGroup {
-            FollowerStatusView()
+            RootView()
                 .environmentObject(store)
+                .environmentObject(history)
                 .onAppear { store.refresh() }
                 .onChange(of: scenePhase) { _, phase in
                     // A follower is opened to answer "how are they right now?".
@@ -37,6 +40,38 @@ struct LoopFollowApp: App {
                     // it was last closed.
                     if phase == .active { store.refresh() }
                 }
+        }
+    }
+}
+
+/// The four screens.
+///
+/// ⚠️ "Now" IS FIRST AND IS THE DEFAULT, and the others are deliberately behind
+/// it. This app is opened to answer one question — how are they, right now — and
+/// anything that makes that answer take a second tap is the wrong shape for the
+/// moment it gets used in.
+struct RootView: View {
+    @EnvironmentObject private var store: FollowerFeedStore
+    @EnvironmentObject private var history: FollowerHistoryStore
+    @AppStorage("com.uriBregman.loopkit.basal.LoopFollow.sample") private var showingSample = false
+
+    var body: some View {
+        TabView {
+            FollowerStatusView()
+                .tabItem { Label(NSLocalizedString("Now", comment: "Tab"), systemImage: "waveform.path.ecg") }
+            FollowerHistoryView()
+                .tabItem { Label(NSLocalizedString("History", comment: "Tab"), systemImage: "list.bullet") }
+            FollowerStatsView()
+                .tabItem { Label(NSLocalizedString("Summary", comment: "Tab"), systemImage: "chart.bar") }
+            NavigationStack {
+                // ⚠️ Sample mode has to reach EVERY tab. A settings screen saying
+                // "nothing has arrived" beside three tabs full of sample numbers
+                // is how someone concludes the sample numbers are real.
+                FollowerSettingsView(settings: showingSample
+                                     ? FollowerFixture.feed.settings
+                                     : store.feed?.settings)
+            }
+            .tabItem { Label(NSLocalizedString("Settings", comment: "Tab"), systemImage: "slider.horizontal.3") }
         }
     }
 }

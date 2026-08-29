@@ -13,6 +13,9 @@
 		690A4225794A4203B4682CE9 /* FollowerStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08B96D31805463E834F3F4A /* FollowerStatusView.swift */; };
 		AA54E7F60B704C59ADFC155E /* FollowerSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAF78C5E66744AD9209FC75 /* FollowerSettingsView.swift */; };
 		A14CD801156743EDA1631979 /* FollowerFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C31EA782DA4F76BB4B3A30 /* FollowerFixture.swift */; };
+		7C8C401F11AD477B8677575D /* FollowerHistoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091106D1E54E443EB5C38BFA /* FollowerHistoryStore.swift */; };
+		16EE276C95564EF38A9420CC /* FollowerHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AE45BB763B4AF499F227D5 /* FollowerHistoryView.swift */; };
+		4D672854B36844F6B03D6736 /* FollowerStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116381C290F7452D9DF18B23 /* FollowerStatsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		E08B96D31805463E834F3F4A /* FollowerStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerStatusView.swift; sourceTree = "<group>"; };
 		EBAF78C5E66744AD9209FC75 /* FollowerSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerSettingsView.swift; sourceTree = "<group>"; };
 		F1C31EA782DA4F76BB4B3A30 /* FollowerFixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerFixture.swift; sourceTree = "<group>"; };
+		091106D1E54E443EB5C38BFA /* FollowerHistoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerHistoryStore.swift; sourceTree = "<group>"; };
+		78AE45BB763B4AF499F227D5 /* FollowerHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerHistoryView.swift; sourceTree = "<group>"; };
+		116381C290F7452D9DF18B23 /* FollowerStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerStatsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,9 @@
 				E08B96D31805463E834F3F4A /* FollowerStatusView.swift */,
 				EBAF78C5E66744AD9209FC75 /* FollowerSettingsView.swift */,
 				F1C31EA782DA4F76BB4B3A30 /* FollowerFixture.swift */,
+				091106D1E54E443EB5C38BFA /* FollowerHistoryStore.swift */,
+				78AE45BB763B4AF499F227D5 /* FollowerHistoryView.swift */,
+				116381C290F7452D9DF18B23 /* FollowerStatsView.swift */,
 				F71A1ECD6D8B429594E5A59F /* LoopFollow.entitlements */,
 			);
 			path = LoopFollow;
@@ -159,6 +168,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D672854B36844F6B03D6736 /* FollowerStatsView.swift in Sources */,
+				16EE276C95564EF38A9420CC /* FollowerHistoryView.swift in Sources */,
+				7C8C401F11AD477B8677575D /* FollowerHistoryStore.swift in Sources */,
 				8F83F9FF5CF54DD5885A778E /* LoopFollowApp.swift in Sources */,
 				5676F20414C84D2190B2CB65 /* FollowerFeed.swift in Sources */,
 				BC3652D73BF34A66BE39400F /* FollowerFeedStore.swift in Sources */,

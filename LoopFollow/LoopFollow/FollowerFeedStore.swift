@@ -152,6 +152,11 @@ final class FollowerFeedStore: ObservableObject {
             }
             let decoded = try FollowerFeed.decode(payload)
             feed = decoded
+            // ⚠️ EVERY SUCCESSFUL FETCH IS FOLDED INTO THE DURABLE STORE, HERE
+            // AND NOWHERE ELSE. The feed record is a rolling 24-hour window that
+            // is overwritten in place, so anything not kept at the moment it is
+            // read is gone for good — there is no way to ask for it again.
+            FollowerHistoryStore.shared.merge(decoded)
             lastFetch = Date()
             state = .loaded(publishedAt: decoded.published ?? record["publishedAt"] as? Date)
         } catch let error as CKError where error.code == .unknownItem {
