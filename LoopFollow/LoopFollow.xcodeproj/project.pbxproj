@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F83F9FF5CF54DD5885A778E /* LoopFollowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55472EB6D09E4BDC9C9F39E5 /* LoopFollowApp.swift */; };
+		5676F20414C84D2190B2CB65 /* FollowerFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCD9AF02E7D4E92ACFD3D42 /* FollowerFeed.swift */; };
+		BC3652D73BF34A66BE39400F /* FollowerFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0EC4532A04402DB56178AF /* FollowerFeedStore.swift */; };
+		690A4225794A4203B4682CE9 /* FollowerStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08B96D31805463E834F3F4A /* FollowerStatusView.swift */; };
+		AA54E7F60B704C59ADFC155E /* FollowerSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAF78C5E66744AD9209FC75 /* FollowerSettingsView.swift */; };
+		A14CD801156743EDA1631979 /* FollowerFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C31EA782DA4F76BB4B3A30 /* FollowerFixture.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BF6E7538AD454D9398A721C7 /* LoopFollow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoopFollow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F71A1ECD6D8B429594E5A59F /* LoopFollow.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LoopFollow.entitlements; sourceTree = "<group>"; };
+		55472EB6D09E4BDC9C9F39E5 /* LoopFollowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopFollowApp.swift; sourceTree = "<group>"; };
+		2FCD9AF02E7D4E92ACFD3D42 /* FollowerFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerFeed.swift; sourceTree = "<group>"; };
+		6E0EC4532A04402DB56178AF /* FollowerFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerFeedStore.swift; sourceTree = "<group>"; };
+		E08B96D31805463E834F3F4A /* FollowerStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerStatusView.swift; sourceTree = "<group>"; };
+		EBAF78C5E66744AD9209FC75 /* FollowerSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerSettingsView.swift; sourceTree = "<group>"; };
+		F1C31EA782DA4F76BB4B3A30 /* FollowerFixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerFixture.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E21EA4A4716E46E6B5CE7934 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C269B7E7F0D3435C8898E69E = {
+			isa = PBXGroup;
+			children = (
+				639A6E405FF24D1D85B4FD6A /* LoopFollow */,
+				E2CD248EE434486CB3C98EC2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E2CD248EE434486CB3C98EC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF6E7538AD454D9398A721C7 /* LoopFollow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		639A6E405FF24D1D85B4FD6A /* LoopFollow */ = {
+			isa = PBXGroup;
+			children = (
+				55472EB6D09E4BDC9C9F39E5 /* LoopFollowApp.swift */,
+				2FCD9AF02E7D4E92ACFD3D42 /* FollowerFeed.swift */,
+				6E0EC4532A04402DB56178AF /* FollowerFeedStore.swift */,
+				E08B96D31805463E834F3F4A /* FollowerStatusView.swift */,
+				EBAF78C5E66744AD9209FC75 /* FollowerSettingsView.swift */,
+				F1C31EA782DA4F76BB4B3A30 /* FollowerFixture.swift */,
+				F71A1ECD6D8B429594E5A59F /* LoopFollow.entitlements */,
+			);
+			path = LoopFollow;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4FCA65D29BBF47679001B1ED /* LoopFollow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B76D4C1A7FA4FE59507BE3A /* Build configuration list for PBXNativeTarget "LoopFollow" */;
+			buildPhases = (
+				C1AE9582F80643D7B7821299 /* Read-only boundary */,
+				6EEF3990EC0C49DEBAA8F6AE /* Sources */,
+				E21EA4A4716E46E6B5CE7934 /* Frameworks */,
+				BBF15D72054E4B94A89488B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoopFollow;
+			productName = LoopFollow;
+			productReference = BF6E7538AD454D9398A721C7 /* LoopFollow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78839326433A4DAF80651B48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					4FCA65D29BBF47679001B1ED = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = C95441AA76564AD78E65E596 /* Build configuration list for PBXProject "LoopFollow" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C269B7E7F0D3435C8898E69E;
+			productRefGroup = E2CD248EE434486CB3C98EC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FCA65D29BBF47679001B1ED /* LoopFollow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BBF15D72054E4B94A89488B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C1AE9582F80643D7B7821299 /* Read-only boundary */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Read-only boundary";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Scripts/check-read-only.sh\"
+";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6EEF3990EC0C49DEBAA8F6AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F83F9FF5CF54DD5885A778E /* LoopFollowApp.swift in Sources */,
+				5676F20414C84D2190B2CB65 /* FollowerFeed.swift in Sources */,
+				BC3652D73BF34A66BE39400F /* FollowerFeedStore.swift in Sources */,
+				690A4225794A4203B4682CE9 /* FollowerStatusView.swift in Sources */,
+				AA54E7F60B704C59ADFC155E /* FollowerSettingsView.swift in Sources */,
+				A14CD801156743EDA1631979 /* FollowerFixture.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		144B690B140C442E8115B2ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A9F816E4CC56459484BE777C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5C3F8F5457B44B0A4E4814C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = LoopFollow/LoopFollow.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = LoopFollow/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uriBregman.loopkit.basal.LoopFollow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1DD1C69F2BAF42E894CAE071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = LoopFollow/LoopFollow.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = LoopFollow/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uriBregman.loopkit.basal.LoopFollow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C95441AA76564AD78E65E596 /* Build configuration list for PBXProject "LoopFollow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				144B690B140C442E8115B2ED /* Debug */,
+				A9F816E4CC56459484BE777C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B76D4C1A7FA4FE59507BE3A /* Build configuration list for PBXNativeTarget "LoopFollow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5C3F8F5457B44B0A4E4814C /* Debug */,
+				1DD1C69F2BAF42E894CAE071 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 78839326433A4DAF80651B48 /* Project object */;
+}
