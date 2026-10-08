@@ -1,5 +1,10 @@
 # Loop — Uri Bregman's personal fork
 
+<img width="117.9" height="255.6" alt="IMG_1656" src="https://github.com/user-attachments/assets/a3c9635a-8690-483e-b317-4898109dcde4" />
+<img width="117.9" height="255.6" alt="IMG_1655" src="https://github.com/user-attachments/assets/267d224c-7c4e-4358-94f9-812bf49e05f6" />
+<img width="117.9" height="255.6" alt="IMG_1654" src="https://github.com/user-attachments/assets/4b341ce4-1206-49db-b905-3d00444b34d7" />
+
+
 This is my personal, modified version of [Loop](https://github.com/LoopKit/LoopWorkspace), the open-source automated insulin delivery app. It is based on **Loop 3.14.9**.
 
 It is **not** the official Loop, it is **not** affiliated with or endorsed by LoopKit or Loop and Learn, and it has not been reviewed by them.
@@ -31,10 +36,20 @@ I spent countless hours on this — describing what I wanted, testing on myself,
 - **Searchable food-emoji picker**, grouped by fast / medium / slow.
 - **Favourite meals** that reuse the same meal screen, with optional photo.
 - **Meal names and emoji kept with the entries** and shown in the carb list.
+  
+<img width="117.9" height="255.6" alt="IMG_1652" src="https://github.com/user-attachments/assets/bf131739-6a2a-4a8d-84c6-88b930109d33" />
+<img width="117.9" height="255.6" alt="IMG_1651" src="https://github.com/user-attachments/assets/bf69799e-3cf5-463b-a248-aa0e94021ba9" />
+<img width="117.9" height="255.6" alt="IMG_1650" src="https://github.com/user-attachments/assets/58eb69eb-cd27-4470-afe9-6119184281de" />
+
+
 
 ### Statistics and history
+- **VERY IMPORTENT**: to enable statistics you need to enable history log in settings and the stats count from that moment on.
 - **History Log**: an append-only, permanent copy of glucose, doses, carbs and loop status, because Loop itself keeps only about 7 days. Can be kept in iCloud Drive.
 - **Statistics screen** built on that log: time in range for 3 / 7 / 14 / 30 / 60 / 90 days or all history, a "best run" comparison, insulin and carbs per day, post-meal summaries, a scrollable 7-day glucose chart with day markers, and an HTML report.
+  
+<img width="117.9" height="255.6" alt="IMG_1653" src="https://github.com/user-attachments/assets/38179072-6e0a-4606-83d1-e1c0957e7a80" />
+
 
 ### Alerts
 - **Custom alerts**: glucose rate / trend alerts and a low-reservoir alert, each with its own sound and settings.
