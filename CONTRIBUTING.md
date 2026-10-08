@@ -1,3 +1,8 @@
+# THIS IS TEXT COPIED 1:1 FROM THE MAIN OFFICIAL LOOP! it is not from the publisher of this project.
+
+
+
+
 # Contributing to Loop
 
 Thank you for your interest in contributing to Loop.

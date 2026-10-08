@@ -22,9 +22,9 @@ I spent countless hours on this — describing what I wanted, testing on myself,
 ## What is different from official Loop
 
 ### Look and feel
-- **Home screen rebuilt on iOS 26 Liquid Glass**: glass status pills at the top, a floating glass bottom bar, an "action island" for pod/sensor expiry lines and other notices.
+- **Home screen rebuilt on iOS 27 Liquid Glass**: glass status pills at the top, a floating glass bottom bar, an "action island" for pod/sensor expiry lines and other notices.
 - **A shared glass design system** used across the fork's screens (tiles, buttons, press animations), with separate tuning for iOS 26 and iOS 27 dark mode.
-- **Custom app icon.**
+- **Custom modern app icon.**
 
 ### Meals
 - **Redesigned Add Meal screen**: one meal can hold several parts (for example fast carbs plus slow fat/protein), each with its own amount, start time, absorption time and food emoji.
@@ -49,7 +49,7 @@ I spent countless hours on this — describing what I wanted, testing on myself,
 - **Preferences screen** with guard-railed options, including Basal Lock (see below).
 
 ### Following
-- **Follow**: an optional, off-by-default feed that publishes read-only status through CloudKit so another person can see your Loop. The follower app itself is a separate project and is **not** in this repository.
+- **Follow**: an optional, off-by-default feed that publishes read-only status through CloudKit so another person can see your Loop. The follower app itself is a separate project and is **not** in this repository. currently developed and tested.
 
 ### Devices and system
 - **Dexcom G7: recovery from a stuck Bluetooth handshake.** When the sensor connects but the handshake keeps failing, the fork resets the connection instead of waiting. This is my own change on top of upstream's G7 fix, made after I lost readings for over an hour twice.
