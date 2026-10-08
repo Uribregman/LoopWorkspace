@@ -1,9 +1,9 @@
 [submodule "Loop"]
 	path = Loop
-	url = https://github.com/LoopKit/Loop.git
+	url = https://github.com/Uribregman/Loop.git
 [submodule "LoopKit"]
 	path = LoopKit
-	url = https://github.com/LoopKit/LoopKit.git
+	url = https://github.com/Uribregman/LoopKit.git
 [submodule "CGMBLEKit"]
 	path = CGMBLEKit
 	url = https://github.com/LoopKit/CGMBLEKit.git
@@ -15,7 +15,7 @@
 	url = https://github.com/LoopKit/RileyLinkKit
 [submodule "NightscoutService"]
 	path = NightscoutService
-	url = https://github.com/LoopKit/NightscoutService.git
+	url = https://github.com/Uribregman/NightscoutService.git
 [submodule "Minizip"]
 	path = Minizip
 	url = https://github.com/LoopKit/Minizip.git
@@ -24,7 +24,7 @@
 	url = https://github.com/LoopKit/TrueTime.swift.git
 [submodule "LoopOnboarding"]
 	path = LoopOnboarding
-	url = https://github.com/LoopKit/LoopOnboarding.git
+	url = https://github.com/Uribregman/LoopOnboarding.git
 [submodule "AmplitudeService"]
 	path = AmplitudeService
 	url = https://github.com/LoopKit/AmplitudeService.git
@@ -36,10 +36,10 @@
 	url = https://github.com/LoopKit/NightscoutRemoteCGM.git
 [submodule "LoopSupport"]
 	path = LoopSupport
-	url = https://github.com/LoopKit/LoopSupport
+	url = https://github.com/Uribregman/LoopSupport.git
 [submodule "G7SensorKit"]
 	path = G7SensorKit
-	url = https://github.com/LoopKit/G7SensorKit.git
+	url = https://github.com/Uribregman/G7SensorKit.git
 [submodule "TidepoolService"]
 	path = TidepoolService
 	url = https://github.com/LoopKit/TidepoolService.git
@@ -54,7 +54,7 @@
 	url = https://github.com/LoopKit/LibreTransmitter.git
 [submodule "OmnipodKit"]
 	path = OmnipodKit
-	url = https://github.com/loopandlearn/OmnipodKit
+	url = https://github.com/Uribregman/OmnipodKit.git
 [submodule "MedtrumKit"]
 	path = MedtrumKit
 	url = https://github.com/jbr7rr/MedtrumKit
