@@ -12,9 +12,9 @@ It is **not** the official Loop, it is **not** affiliated with or endorsed by Lo
 ## ⚠️ Read this before you do anything with it
 
 - **This app doses insulin.** A bug here can cause serious harm or death.
-- **The changes were made with AI.** Almost all of the code that differs from official Loop was written by an AI coding assistant (Anthropic's Claude) working under my direction. I am not a professional iOS developer, and no experienced Loop developer has reviewed it.
+- **The changes were made with AI.** Almost all of the code that differs from official Loop was written by an AI coding assistant (Anthropic's Claude with a lot of security leyers to prevent it from changing crucial dosing systems and algorithm) working under my direction. I am not a professional iOS developer, and no experienced Loop developer has reviewed it.
 - **It has been tested properly on exactly one person: me.** It runs on my own phone, with my own CGM (Dexcom G7) and my own pump. It has never been tested on anyone else, on other pumps or sensors, or in a clinical setting.
-- **The newest commits have had less testing than the rest.** The update to 3.14.9 and the removal of the AI carb feature were checked on the iOS Simulator; see "What is tested" below.
+- **The newest commits have had less testing than the rest.** The update to 3.14.9 .
 - **It touches dosing-related code.** See "Changes that can affect dosing" below. Do not assume the algorithm is identical to official Loop.
 - **It is not medical advice and comes with no warranty** (MIT license, same as Loop). If you build or use it, you do so entirely at your own risk.
 
@@ -71,8 +71,6 @@ I spent countless hours on this — describing what I wanted, testing on myself,
 - **Builds and runs on Xcode 27 / iOS 27**, with its own scene-lifecycle handling.
 - **Performance fixes** in the fork's own code (caching of alert settings, meal lists, date formatters, batched history writes).
 
-### Removed
-- **AI carb estimation** (photo-based carb estimates through Claude / Gemini / OpenAI) used to be part of this fork. I removed it before publishing. It is still in the git history, at tag `ai-carb-v1` in the `Loop` repository. No API keys were ever stored in the code.
 
 ## Changes that can affect dosing
 
