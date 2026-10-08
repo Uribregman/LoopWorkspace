@@ -12,9 +12,9 @@ It is **not** the official Loop, it is **not** affiliated with or endorsed by Lo
 ## ⚠️ Read this before you do anything with it
 
 - **This app doses insulin.** A bug here can cause serious harm or death.
-- **The changes were made with AI.** Almost all of the code that differs from official Loop was written by an AI coding assistant (Anthropic's Claude with a lot of security leyers to prevent it from changing crucial dosing systems and algorithm) working under my direction. I am not a professional iOS developer, and no experienced Loop developer has reviewed it.
+- **The changes were made with AI.** Almost all of the code that differs from official Loop was written by an AI coding assistant (Anthropic's Claude) working under my direction, under a standing rule not to edit Loop's dosing algorithm. Every change was then compared file by file against the official Loop code: the dosing maths differs from official Loop only in the places listed under "Changes that can affect dosing" below. I am not a professional iOS developer, and no experienced Loop developer has reviewed it.
 - **It has been tested properly on exactly one person: me.** It runs on my own phone, with my own CGM (Dexcom G7) and my own pump. It has never been tested on anyone else, on other pumps or sensors, or in a clinical setting.
-- **The newest commits have had less testing than the rest.** The update to 3.14.9 .
+- **The newest commits have had less testing than the rest.** The update to 3.14.9 was checked on the iOS Simulator before it went onto my phone; see "What is tested" below.
 - **It touches dosing-related code.** See "Changes that can affect dosing" below. Do not assume the algorithm is identical to official Loop.
 - **It is not medical advice and comes with no warranty** (MIT license, same as Loop). If you build or use it, you do so entirely at your own risk.
 
@@ -44,7 +44,7 @@ I spent countless hours on this — describing what I wanted, testing on myself,
 
 
 ### Statistics and history
-- **VERY IMPORTENT**: to enable statistics you need to enable history log in settings and the stats count from that moment on.
+- **VERY IMPORTANT**: to enable statistics you need to enable history log in settings and the stats count from that moment on.
 - **History Log**: an append-only, permanent copy of glucose, doses, carbs and loop status, because Loop itself keeps only about 7 days. Can be kept in iCloud Drive.
 - **Statistics screen** built on that log: time in range for 3 / 7 / 14 / 30 / 60 / 90 days or all history, a "best run" comparison, insulin and carbs per day, post-meal summaries, a scrollable 7-day glucose chart with day markers, and an HTML report.
   
@@ -77,7 +77,7 @@ I spent countless hours on this — describing what I wanted, testing on myself,
 I did not set out to change Loop's dosing algorithm, but these parts of the fork are in or next to dosing code. Read the diffs yourself.
 
 - **Basal Lock** (`LoopKit/LoopKit/LoopAlgorithm/DoseMath.swift`): Loop and Learn's customization. When switched on, and glucose is above a threshold you choose (200–300 mg/dL), Loop will not lower basal below your scheduled rate. Off by default.
-- **`allowStalePumpData`** (`Loop/Loop/Managers/LoopDataManager.swift`): an extra parameter on glucose prediction that defaults to `false`.
+- **`allowStalePumpData`** (`Loop/Loop/Managers/LoopDataManager.swift`): an extra parameter on glucose prediction. It is `false` for automatic dosing. The bolus and manual-dose screens set it to `true`, so their prediction chart still draws when pump data is more than a few minutes old.
 - **Profiles** change the therapy settings Loop doses from, by design.
 - **History Log and Follow** add write-only hooks at the end of the loop cycle and where carb entries are stored. They are meant to observe only.
 - **G7 reconnect logic** changes when Loop gets glucose readings back after a failed connection.
